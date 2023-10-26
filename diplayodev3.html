@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Sayfa Düzeni</title>
+
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr; /*yatayda 3 sutun*/
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-gap: 15px; 
+            height: 100vh;
+            border: 1px solid black;
+            
+        }
+        .container div{
+           
+            font-size: 20px;
+        }
+          .header{
+            grid-column: 1/4;
+            grid-row: 1;
+            height: 100px;
+            background-color: blue;
+          }
+
+          .footer{
+            grid-column: 1/4;
+            grid-row: 5;
+            height: 60px;
+            margin-bottom: 10px;
+            background-color: green;
+        }
+        .menu{
+            grid-column: 1/4;
+            grid-row: 2/3;
+            height: 50px;
+            background-color: green;
+        }
+        .banner{
+            grid-column: 2/4;
+            grid-row: 3;
+            height: 250px;
+            background-color: blue;
+        }
+
+        .icerik{
+            grid-column: 2/4;
+            grid-row: 4;
+            height: 150px;
+            background-color: green;
+        }
+        .sidebar{
+            grid-column: 1/2;
+            grid-row: 3/5;
+            background-color: blue;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+<div class="header"></div>
+<div class="menu"></div>
+<div class="banner"></div>
+<div class="sidebar"></div>
+<div class="icerik"></div>
+<div class="footer"></div>
+</div>
+
+</body>
+</html>
